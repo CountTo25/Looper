@@ -1,0 +1,47 @@
+body {
+    --border-glass: rgba(151, 151, 151, 0.253); 
+}
+
+* {
+    transition: 0.25s all;
+}
+
+.clickable {
+    border-top-left-radius: 4px 5px;
+    border-top-right-radius: 4px 5px;
+    border-bottom-left-radius: 4px 5px;
+    border-bottom-right-radius: 4px 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.clickable.active {
+
+}
+
+.static {
+    border-radius: 0px;
+}
+
+
+.border.all {
+    border: 1px solid;
+}
+
+.border.bottom {
+    border-bottom: 1px solid;
+
+}
+
+.border.glass {
+    border-color: var(--border-glass) !important;
+}
+
+.glass.body {
+    backdrop-filter: blur(3px);
+    background-color:rgba(31, 31, 31, 0.253);
+}
+
+.bg.alert {
+    background-color: rgba(189, 39, 39, 0.425);
+}
