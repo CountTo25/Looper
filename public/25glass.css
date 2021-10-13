@@ -11,12 +11,15 @@ body {
     border-top-right-radius: 4px 5px;
     border-bottom-left-radius: 4px 5px;
     border-bottom-right-radius: 4px 5px;
-    cursor: pointer;
     user-select: none;
 }
 
 .clickable.active {
 
+}
+
+.clickable.cursor {
+    cursor: pointer;
 }
 
 .static {
@@ -26,6 +29,10 @@ body {
 
 .border.all {
     border: 1px solid;
+}
+
+.border.left {
+    border-left: 1px solid;
 }
 
 .border.bottom {
@@ -44,4 +51,8 @@ body {
 
 .bg.alert {
     background-color: rgba(189, 39, 39, 0.425);
+}
+
+.glass.active {
+    background-color: var(--accent);
 }

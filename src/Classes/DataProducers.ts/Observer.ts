@@ -9,7 +9,7 @@ export default class Observer extends DataProducer {
     public income: Decimal = new Decimal(1);
     public price = (current: Decimal, amount: Decimal) => 
     {
-        return new Decimal(1).times(current);
+        return new Decimal(1).times(current.add(1));
     }
     
     public calculateIncome = (owned: Decimal, upgrades: Upgrade[]) => 

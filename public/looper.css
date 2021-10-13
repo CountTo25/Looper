@@ -1,8 +1,9 @@
 body {
     background-color: rgb(18, 20, 29);
     color: rgb(227, 228, 255);
+    --accent: rgba(73, 73, 216, 0.4);
 }
 
 .loopbar {
-    background-color: rgba(73, 73, 216, 0.4);
+    background-color: var(--accent);
 }
